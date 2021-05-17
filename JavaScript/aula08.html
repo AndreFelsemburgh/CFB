@@ -1,0 +1,62 @@
+<!Doctype html>
+<html lang="pt-br">
+ <head>
+   <title>Curso de JavaScript</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="André Felsemburgh">
+   <meta name="description" content="base">
+   <meta name="keywords" content="HTML, Css, Javascript">
+   
+   <script>
+   
+   document.write("<h1>Operadores Lógicos AND(&&) e OR (||)</h1>")
+   /*
+       Tabela verdade do And (&&) -  
+       Só retorna verdadeiro quando aTODAS ascondições forem VERDADEIRAS.
+       
+       Tabela verdade do OR (||)
+       Retorna verdadeiro quando UMA das condições forem VERDADEIRAS.
+       */
+       
+       /* TABELA VERDADE AND
+
+        V     V     = V
+        V     F     = F
+        F     V     = F
+        F     F     = F
+
+        TABELA VERDADE FO OR
+
+        V     V     =V
+        V     F     =V
+        F     V     =V
+        F     F     =F
+       
+       */
+       
+        var pontos = 79;
+        var energia = 30;
+        
+        
+        // Vitória =>  (   ((>=30)&&(<=40)) || ((>=70)&&(<=80))    )
+        
+        if(
+            ((pontos>=30)&&(pontos<=40)&&(energia>=40))
+            ||
+            ((pontos>=70)&&(pontos<=80)&&(energia>=40))
+            ){
+            document.write("Você venceu");
+        }else {
+            document.write ("Você perdeu");
+        }
+      
+   </script>
+ </head>
+     
+
+  <body>
+      
+ </body>
+</html>
+
