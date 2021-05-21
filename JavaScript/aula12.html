@@ -1,0 +1,121 @@
+<!Doctype html>
+<html lang="pt-br">
+ <head>
+   <title>Curso de JavaScript</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="André Felsemburgh">
+   <meta name="description" content="base">
+   <meta name="keywords" content="HTML, Css, Javascript">
+   
+   <script>
+       document.write("<h1>Switch - Case</h1>")
+
+        // Estruturas switch case
+        /*
+        Utilizamos o IF quando não conseguimos ter certeza do valor retornado, do valor testado. 
+        No caso do Switch nós sabemos qual o valor retornado, e dali nós determinamos as instruções para cada valor. 
+        Exemplo: Num jogo, nós temos as posições de primeiro, segundo e terceiro colocados. E com isso podemos definir instruções para cada uma dessas posições.
+        
+      ESTRUTURA
+
+      switch(){
+        case x;
+        case y;
+        default;
+     }  
+     */
+
+     var pos,msg;
+     pos = 10;
+
+     switch(pos){
+       case 1:
+        msg = "Primeiro Lugar<br>Medalha de Ouro";
+        break;
+       case 2:
+        msg = "Segundo Lugar<br>Medalha de Prata";
+        break;
+       case 3:
+        msg = "Terceiro Lugar<br>Medalha de Bronze";
+        break;
+       default: 
+        msg = "Não foi ao pódio<br>Não obteve medalha;"
+     }
+     
+
+     switch(pos)
+     {
+       case 1:
+       case 2:
+       case 3:
+         msg+="<br>Subiu ao pódio";
+         break;
+       default:
+         msg+="<br>Não obteve colocação<br><br><br>";
+     }
+
+     document.write(msg);
+
+     // O if vamos utilizar quando não temos certeza do valor da variável. O swuitch nós vamos utilizar quando sabemos o valor da variável e as condições.
+
+
+     // COMBINANDO O IF COM O SWITCH.
+     // O IF VAI DETERMINAR AS FAIXAS DE PONTOS E O SWITCH APLICAR AS REGRAS.
+     document.write("<h1>IF mais Switch - Case</h1>")
+
+     var pos,msg,pontos;
+
+     pontos=499;
+
+     if(pontos >= 1000)
+     {
+       pos=1;
+     }
+     else if(pontos >= 800) {
+      pos = 2;
+     }
+     else if(pontos >= 600) {
+       pos = 3;
+     }
+     else {
+       pos = 0;
+     }
+
+     switch(pos){
+       case 1:
+        msg = "Primeiro Lugar<br>Medalha de Ouro";
+        break;
+       case 2:
+        msg = "Segundo Lugar<br>Medalha de Prata";
+        break;
+       case 3:
+        msg = "Terceiro Lugar<br>Medalha de Bronze";
+        break;
+       default: 
+        msg = "Não foi ao pódio<br>Não obteve medalha;"
+     }
+     
+
+     switch(pos)
+     {
+       case 1:
+       case 2:
+       case 3:
+         msg+="<br>Subiu ao pódio";
+         break;
+       default:
+         msg+="<br>Não obteve colocação";
+     }
+
+     document.write(msg);
+
+   </script>
+ </head>
+ 
+
+  <body>
+      
+ </body>
+</html>
+

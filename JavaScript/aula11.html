@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="pt-br">
+ <head>
+   <title>Curso de JavaScript</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="André Felsemburgh">
+   <meta name="description" content="base">
+   <meta name="keywords" content="HTML, Css, Javascript">
+   
+   <script>
+       document.write("<h1>Bloco de comandos</h1><br><p>Quando usamos ou podemos deixar de usar as chaves</p>")
+
+       
+
+       var num = 1;
+
+       if(num > 10){
+        res="Maior que 10";
+       }else{
+         res="Menor que 10";
+       }
+       document.write(res + "<br>");
+       
+       // As chaves tem uso obrigatório quando temos um número maior que 1 de instrução de um bloco.
+       // O if e o else no caso acima, só tem uma instrução, logos não é obrigatório o uso das chaves. Se removermos as chaves, funcionará normalmente.
+
+       if(num > 10)
+        res="Maior que 10";
+       else 
+         res="Menor que 10";
+       
+       document.write(res + "<br>");
+
+        //No caso abaixo as chaves são obrigatórias, pois temos mais de uma instrução para if e else.
+
+        if(num > 10) {
+          res="Maior que 10";
+          document.write(res + "<br>");
+          alert(res);
+        }
+        else {
+          res="Menor que 10";
+          document.write(res + "<br>");
+          alert(res);
+        }
+
+        /// As chaves são para delimitar quais comandos pertencem aquele bloco e podemos defini-lo das seguintes maneiras: A forma como você vai estruturar o seu código é meramente pessoal. Vai funcionar da mesma forma.
+        /*
+          if(){
+            instrução;
+          }else{
+            instrução;
+          }
+
+          if() instrução
+          else instrução
+
+          if()
+          {
+            instrução;
+          }
+          else
+          {
+            instrução;
+          }
+        */
+
+
+   </script>
+ </head>
+ 
+
+  <body>
+      
+ </body>
+</html>
+
